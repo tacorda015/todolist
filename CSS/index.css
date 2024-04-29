@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	}
+
+	ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.drag-column-it-staff .drag-column-header,
+	.drag-column-it-staff .is-moved {
+	background: #FB7D44;
+	}
+	.drag-column-to-do .drag-column-header,
+	.drag-column-to-do .is-moved,
+	.Todo {
+	background: #3f99f2;
+	}
+	.drag-column-on-going .drag-column-header,
+	.drag-column-on-going .is-moved,
+	.On-Going {
+	background: #F4CE46;
+	}
+	.drag-column-done .drag-column-header,
+	.drag-column-done .is-moved,
+	.Done {
+	background: #00B961;
+	}
+
+	.drag-inner-list {
+	min-height: 50px;
+	}
+
+	.drag-item {
+	height: auto;
+	padding: 1rem;
+	/* transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); */
+	}
+
+	.drag-item.is-moving {
+	transform: scale(1.05);
+	background: rgba(200, 200, 200, 0.7);
+	}
+
+	/* Dragula CSS  */
+	.gu-mirror {
+	position: fixed !important;
+	margin: 0 !important;
+	z-index: 9999 !important;
+	opacity: 0.9;
+	list-style-type: none;
+	}
+
+	.gu-hide {
+	display: none !important;
+	}
+
+	.gu-unselectable {
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+	}
+
+	.gu-transit {
+	opacity: 0.5;
+	}
+
+	.plus-icon{
+		color: #eff8ff;
+	}
+	.plus-icon:hover{
+		transform: translateY(-1px);
+		color: #c0e3fd;
+	}
+	.plus-icon:active{
+		transform: translateY(1px);
+		color: #c0e3fd;
+	}
+	.editIcons{
+		position: absolute;
+		right: .5rem;
+		top: .25rem;
+		font-size: 1.25rem;
+	}
+	.overflow-wrap{
+		overflow-wrap: break-word;
+	}
+	a.nav-link{
+		cursor: pointer;
+	}
+	.minWidth{
+		min-width: 20% !important;
+		max-width: 25% !important;
+	}
+	@media screen and (min-width: 769px) and (max-width: 992px) { 
+		.minWidth{
+			min-width: 33.33% !important;
+			max-width: 50% !important;
+		}
+	}
+	@media screen and (max-width: 768px) { 
+		.minWidth{
+			max-width: 100% !important;
+		}
+	}
